@@ -1,0 +1,85 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+nav{
+  background-color: rgb(82, 11, 82);
+  color: white;
+  display: flex;
+  height: 12vh;
+  font-size: 7vh;
+  align-items: center;
+  justify-content: center;
+  /* font-family: 'Rubik Glitch Pop', system-ui;
+  font-family: 'Sixtyfour', sans-serif; */
+}
+.content{
+  display: flex;
+  margin-top: 5vh ;
+}
+.board{
+  display: grid;
+  grid-template-columns: 17vh 17vh 17vh;
+  grid-template-rows: 17vh 17vh 17vh;
+  margin-left: 45vh;
+  margin-right: 20vh;
+}
+.sq{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  font-size: 15vh;
+}
+.sq:hover{
+  background-color: rgb(240, 225, 240);
+  cursor: pointer;
+}
+
+.bl{
+  border-left: 0;
+}
+.br{
+  border-right: 0;
+}
+.bt{
+  border-top: 0;
+}
+.bb{
+  border-bottom: 0;
+}
+
+img{
+  height: 200px;
+}
+.extra{
+  font-size: 30px;
+}
+
+.status{
+  font-weight: bold;
+  margin-top: 10px;
+}
+.score{
+  margin-bottom: 15px;
+}
+
+button{
+  background-color:rgb(82, 11, 82);
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 5px 15px;
+  font-size: 30px;
+}
+.button{
+  display: flex;
+  justify-content: center;
+}
+button:hover{
+  color:rgb(82, 11, 82);
+  background-color: white;
+  border: 1px solid rgb(82, 11, 82);
+  cursor: pointer;
+}

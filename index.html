@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+  <head>
+    <title>tic-tac-toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&family=Sixtyfour&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+      TIC-TAC-TOE
+    </nav>
+    <div class="content">
+      <div class="board">
+        <div class="sq b1 bt bl" onclick="update(1)"></div>
+        <div class="sq b2 bt" onclick="update(2)"></div>
+        <div class="sq b3 bt br" onclick="update(3)"></div>
+        <div class="sq b4 bl" onclick="update(4)"></div>
+        <div class="sq b5" onclick="update(5)"></div>
+        <div class="sq b6 br" onclick="update(6)"></div>
+        <div class="sq b7 bl bb" onclick="update(7)"></div>
+        <div class="sq b8 bb" onclick="update(8)"></div>
+        <div class="sq b9 br bb" onclick="update(9)"></div>
+      </div>
+      <div class="extra">
+        <div class="score">X:0 O:0 tie:0</div>
+        <div class="turn">X turn</div>
+        <div class="status"></div>
+        <div id="celeb"></div>
+      </div>
+    </div>
+    <div class="button">
+      <button onclick="
+        window.location.reload();
+        score = JSON.parse(localStorage.getItem('score'));
+        document.querySelector('.score').innerHTML= `X:${score.X} O:${score.O} tie:${score.tie}`;
+      ">New Game</button>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
